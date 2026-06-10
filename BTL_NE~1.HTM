@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Tile Lab® Daily Newsletter — 2026.06.10</title>
+<style>
+:root {
+  --navy:#1B2F82; --teal:#00B5C8; --yellow:#F5A424;
+  --navy-dark:#131F5E; --navy-light:#E8EDFA; --teal-light:#E0F7FA;
+  --bg:#F2F4F8; --card:#FFFFFF; --text:#1A1A2E;
+  --muted:#6B7280; --border:#E5E7EB; --radius:10px; --max-w:700px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Malgun Gothic','맑은 고딕','Apple SD Gothic Neo',sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.6;}
+.topnav{background:var(--navy);position:sticky;top:0;z-index:100;padding:12px 0;}
+.topnav-inner{max-width:var(--max-w);margin:0 auto;padding:0 16px;display:flex;align-items:center;justify-content:space-between;}
+.logo-wrap{display:flex;align-items:center;gap:10px;}
+.logo-dot{width:28px;height:28px;background:var(--teal);border-radius:6px;flex-shrink:0;}
+.logo-text{display:flex;flex-direction:column;}
+.logo-title{color:#fff;font-weight:700;font-size:15px;letter-spacing:-0.3px;}
+.logo-sub{color:var(--teal);font-size:11px;opacity:0.9;}
+.nav-date{color:rgba(255,255,255,0.7);font-size:12px;white-space:nowrap;}
+.tabbar{background:var(--navy-dark);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.tabbar::-webkit-scrollbar{display:none;}
+.tabbar-inner{max-width:var(--max-w);margin:0 auto;display:flex;padding:0 8px;}
+.tab-link{display:inline-block;padding:10px 13px;color:rgba(255,255,255,0.6);text-decoration:none;font-size:12px;white-space:nowrap;border-bottom:2px solid transparent;transition:color .2s,border-color .2s;}
+.tab-link:hover,.tab-link.active{color:#fff;border-bottom-color:var(--teal);}
+.main{max-width:var(--max-w);margin:0 auto;padding:20px 16px 40px;}
+.section{margin-bottom:32px;}
+.section-header{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+.section-icon{font-size:18px;}
+.section-title{font-size:17px;font-weight:700;color:var(--navy);}
+.section-keywords{margin-bottom:12px;display:flex;flex-wrap:wrap;gap:6px;}
+.kw{background:var(--navy-light);color:var(--navy);font-size:11px;padding:3px 8px;border-radius:20px;font-weight:500;}
+.card{display:block;background:var(--card);border-radius:var(--radius);border:1px solid var(--border);padding:14px 16px;margin-bottom:8px;text-decoration:none;color:var(--text);transition:box-shadow .2s,transform .2s;}
+.card:hover{box-shadow:0 4px 12px rgba(27,47,130,.1);transform:translateY(-1px);}
+.card-top{display:flex;align-items:flex-start;gap:8px;margin-bottom:6px;flex-wrap:wrap;}
+.card-title{font-size:14px;font-weight:600;color:var(--text);line-height:1.4;flex:1;min-width:0;}
+.card-excerpt{font-size:12px;color:var(--muted);line-height:1.5;}
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;white-space:nowrap;flex-shrink:0;color:#fff;}
+.bHankook{background:#1B2F82;} .bMaeil{background:#131F5E;} .bSedaily{background:#00B5C8;}
+.bNews1{background:#2563EB;} .bNewsis{background:#64748B;} .bKhan{background:#1F2937;}
+.bNewspim{background:#4F46E5;} .bEtoday{background:#16A34A;} .bMbc{background:#DC2626;}
+.bFnnews{background:#EA580C;} .bYna{background:#0369A1;} .bThelec{background:#7C3AED;}
+.bEtNews{background:#B45309;} .bHerald{background:#059669;} .bPinpoint{background:#9333EA;}
+.bSR{background:#0EA5E9;} .bTheguru{background:#6366F1;} .bEdaily{background:#D97706;}
+.bKorea{background:#374151;} .bMt{background:#0F766E;} .bStartupN{background:#0891B2;}
+.no-news{background:#F9FAFB;border:1px dashed #D1D5DB;border-radius:var(--radius);padding:14px 16px;text-align:center;color:var(--muted);font-size:12px;margin-bottom:8px;}
+.divider{height:1px;background:var(--border);margin:24px 0;}
+.footer{background:var(--navy-dark);color:rgba(255,255,255,.6);text-align:center;padding:24px 16px;font-size:12px;}
+.footer a{color:var(--teal);text-decoration:none;}
+@media(max-width:480px){.logo-title{font-size:13px;}.section-title{font-size:15px;}.card{padding:12px 14px;}}
+</style>
+</head>
+<body>
+
+<header class="topnav">
+  <div class="topnav-inner">
+    <div class="logo-wrap">
+      <div class="logo-dot"></div>
+      <div class="logo-text">
+        <span class="logo-title">Blue Tile Lab® Daily Newsletter</span>
+        <span class="logo-sub">전략기획실 · BTL Intelligence</span>
+      </div>
+    </div>
+    <div class="nav-date">2026.06.10 · 수요일</div>
+  </div>
+</header>
+
+<nav class="tabbar">
+  <div class="tabbar-inner">
+    <a class="tab-link" href="#headline">📰 헤드라인</a>
+    <a class="tab-link" href="#bluetilelab">🏢 블루타일랩</a>
+    <a class="tab-link" href="#ai-vision">🔬 AI비전검사</a>
+    <a class="tab-link" href="#laser">⚡ 극초단파레이저</a>
+    <a class="tab-link" href="#customers">🤝 고객사</a>
+    <a class="tab-link" href="#ipo">📈 IPO</a>
+    <a class="tab-link" href="#venture">🚀 벤처/테크</a>
+    <a class="tab-link" href="#economy">💹 경제이슈</a>
+    <a class="tab-link" href="#society">🗞 시사이슈</a>
+    <a class="tab-link" href="#society2">🏙️ 사회이슈</a>
+  </div>
+</nav>
+
+<main class="main">
+
+<!-- ① 헤드라인 -->
+<section class="section" id="headline">
+  <div class="section-header"><span class="section-icon">📰</span><span class="section-title">헤드라인 TOP5</span></div>
+  <div class="section-keywords">
+    <span class="kw">#정치</span><span class="kw">#경제</span><span class="kw">#외교</span><span class="kw">#국제</span><span class="kw">#IT과학</span>
+  </div>
+
+  <a href="https://www.koreancenter.or.kr/news/articleView.html?idxno=1360765" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bYna">연합뉴스</span><span class="card-title">이재명 대통령, G7 정상회의 참석 위해 유럽 9박 10일 순방 출발</span></div>
+    <div class="card-excerpt">벨기에·이탈리아·교황청·프랑스 방문. 프랑스 G7 정상회의 2년 연속 초청. '실용 외교' 기조로 국격 강화 및 공급망 협력 논의 예정.</div>
+  </a>
+
+  <a href="https://imnews.imbc.com/news/2026/politics/article/6828547_36911.html" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bMbc">MBC</span><span class="card-title">코스피 8,000 돌파 이후 증시 방향성 논쟁…"아직 저평가" 주장도</span></div>
+    <div class="card-excerpt">코스피 8,000 돌파 후 고환율·외국인 수급 불안으로 변동성 확대. 일각에서는 저평가 구간 진입 주장하며 추가 상승 기대.</div>
+  </a>
+
+  <div class="no-news">📭 오늘(2026.06.10) 추가 헤드라인 기사를 찾지 못했습니다.<br><small style="color:#9CA3AF;">※ 주요 이슈: 이스라엘-이란 무력충돌 일단락·넷타냐후 공습 일시 중단, 6·3 지방선거 후속 정국, 젠슨 황 방한 후 출국</small></div>
+  <div class="no-news">📭 오늘(2026.06.10) 추가 헤드라인 기사를 찾지 못했습니다.<br><small style="color:#9CA3AF;">※ 주요 이슈: 원달러 환율 1,494원 수준 고환율 지속, 1Q 명목 성장률 10.5% (50년 만에 두 자릿수)</small></div>
+  <div class="no-news">📭 오늘(2026.06.10) 추가 헤드라인 기사를 찾지 못했습니다.</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ② 블루타일랩 -->
+<section class="section" id="bluetilelab">
+  <div class="section-header"><span class="section-icon">🏢</span><span class="section-title">블루타일랩</span></div>
+  <div class="section-keywords">
+    <span class="kw">#블루타일랩</span><span class="kw">#BlueTileLab</span><span class="kw">#김형우대표</span><span class="kw">#ETRI스핀오프</span>
+  </div>
+  <div class="no-news">📭 오늘(2026.06.10) 블루타일랩 관련 언론 보도를 찾지 못했습니다.</div>
+  <div class="no-news">📭 오늘(2026.06.10) 블루타일랩 관련 언론 보도를 찾지 못했습니다.</div>
+  <div class="no-news">📭 오늘(2026.06.10) 블루타일랩 관련 언론 보도를 찾지 못했습니다.</div>
+  <div class="no-news">📭 오늘(2026.06.10) 블루타일랩 관련 언론 보도를 찾지 못했습니다.</div>
+  <div class="no-news">📭 오늘(2026.06.10) 블루타일랩 관련 언론 보도를 찾지 못했습니다.</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ③ AI비전검사 -->
+<section class="section" id="ai-vision">
+  <div class="section-header"><span class="section-icon">🔬</span><span class="section-title">AI비전검사</span></div>
+  <div class="section-keywords">
+    <span class="kw">#AI비전검사</span><span class="kw">#머신비전</span><span class="kw">#AOI</span><span class="kw">#딥러닝검사</span><span class="kw">#스마트팩토리</span>
+  </div>
+
+  <a href="https://www.theguru.co.kr/news/article.html?no=101923" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bTheguru">더구루</span><span class="card-title">LG이노텍 베트남 공장, AI 검사 솔루션 '소타비전' 도입…불량 99.99% 감지</span></div>
+    <div class="card-excerpt">LG이노텍 하이퐁 V3 신공장에 AI 기반 광학 검사 솔루션 도입. 불량 감지율 99.99% 달성, 글로벌 스마트팩토리 전환 선도 사례로 주목.</div>
+  </a>
+
+  <a href="https://www.edaily.co.kr/News/Read?newsId=03050406645451544&mediaCodeNo=257" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bEdaily">이데일리</span><span class="card-title">시지트로닉스, 글로벌向 초소형 광센서 공급…피지컬AI 수혜 부각</span></div>
+    <div class="card-excerpt">차세대 반도체 기업 시지트로닉스가 글로벌 탑티어 고객사에 초소형 광센서 공급 시작. 피지컬AI 시대 핵심 비전 부품 공급사로 급부상.</div>
+  </a>
+
+  <a href="https://www.edaily.co.kr/News/Read?newsId=02020486645478440&mediaCodeNo=257" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bEdaily">이데일리</span><span class="card-title">브로드컴, AI 반도체 매출 전망 기대 못 미쳐…구글·메타 장기 계약 주목</span></div>
+    <div class="card-excerpt">브로드컴 AI 반도체 장기 공급 계약 확대. 고객사 자체 AI 칩 수요 증가로 범용 AI 비전·검사 반도체 시장 구조 변화 예고.</div>
+  </a>
+
+  <a href="https://www.sptatimeskorea.com/post/%EC%A0%9C20260609-tt-01%ED%98%B8-2026%EB%85%84-6%EC%9B%94-9%EC%9D%BC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B8%B0%EC%88%A0-%EA%B4%80%EB%A0%A8-%EC%A3%BC%EC%9A%94-%EB%89%B4%EC%8A%A4-%EC%9A%94%EC%95%BD" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">SPTA코리아</span><span class="card-title">[6/9] 반도체 기술 뉴스 — AI 계측·검사 수요 급증, KLA 포트폴리오 강화</span></div>
+    <div class="card-excerpt">반도체 공정 고도화로 AI 기반 계측·검사 수요 폭증. KLA 등 글로벌 업체 SW·장비 포트폴리오 확대, 국내 장비사 수혜 전망.</div>
+  </a>
+
+  <div class="no-news">📭 오늘(2026.06.10) 추가 AI비전검사 기사를 찾지 못했습니다.</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ④ 극초단파레이저 -->
+<section class="section" id="laser">
+  <div class="section-header"><span class="section-icon">⚡</span><span class="section-title">극초단파레이저</span></div>
+  <div class="section-keywords">
+    <span class="kw">#펨토초레이저</span><span class="kw">#피코초레이저</span><span class="kw">#USP레이저</span><span class="kw">#레이저미세가공</span><span class="kw">#TGV드릴링</span>
+  </div>
+
+  <a href="https://www.thelec.kr/news/articleView.html?idxno=57238" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bThelec">디일렉</span><span class="card-title">레이저쎌, 국내 반도체 기판업체와 9억원 규모 레이저 장비 계약</span></div>
+    <div class="card-excerpt">레이저쎌이 국내 반도체 기판 전문업체와 9억원 레이저 장비 공급 계약 체결. 패키징 기판 시장 확대에 따른 레이저 가공 수요 지속.</div>
+  </a>
+
+  <a href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=434204" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bPinpoint">핀포인트</span><span class="card-title">레이저쎌, 독보적 패키징 기술력에 글로벌 큰손들 '러브콜'</span></div>
+    <div class="card-excerpt">반도체·디스플레이·이차전지 후공정 패키징 레이저 장비 분야에서 레이저쎌이 독보적 기술력으로 글로벌 대형 고객사 공급 확대.</div>
+  </a>
+
+  <a href="https://www.newspim.com/news/view/20260311000338" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bNewspim">뉴스핌</span><span class="card-title">이오테크닉스, 레이저 어닐링·커팅 장비 고객사 확대…SiC·차세대 NAND 공략</span></div>
+    <div class="card-excerpt">이오테크닉스가 SiC 파워반도체·400단 이상 차세대 NAND에 레이저 어닐링 장비 활용처 확대. PCB향 매출 회복과 함께 성장 기대.</div>
+  </a>
+
+  <a href="https://www.sptatimeskorea.com/post/%EC%A0%9C20260608-te-01%ED%98%B8-2026%EB%85%84-6%EC%9B%94-8%EC%9D%BC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9E%A5%EB%B9%84-%EA%B4%80%EB%A0%A8-%EC%A3%BC%EC%9A%94-%EB%89%B4%EC%8A%A4-%EC%9A%94%EC%95%BD" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">SPTA코리아</span><span class="card-title">[6/8] 반도체 장비 뉴스 — 레이저 어닐링, SiC·NAND 공정으로 확산</span></div>
+    <div class="card-excerpt">레이저 어닐링 공정이 기존 실리콘 웨이퍼를 넘어 SiC 파워반도체·차세대 NAND까지 확산. 울프스피드 등 글로벌사와 국내 장비사 협의 진행 중.</div>
+  </a>
+
+  <div class="no-news">📭 오늘(2026.06.10) 추가 극초단파레이저 기사를 찾지 못했습니다.</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ⑤ 고객사 -->
+<section class="section" id="customers">
+  <div class="section-header"><span class="section-icon">🤝</span><span class="section-title">고객사 핵심기사</span></div>
+  <div class="section-keywords">
+    <span class="kw">#LG에너지솔루션</span><span class="kw">#삼성전기</span><span class="kw">#넥스틴</span><span class="kw">#AP시스템</span><span class="kw">#HBM</span><span class="kw">#유리기판TGV</span>
+  </div>
+
+  <a href="https://www.thelec.kr/news/articleView.html?idxno=53557" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bThelec">디일렉</span><span class="card-title">HBM은 D램 블랙홀…3년 사이에 비중 10배 늘어나</span></div>
+    <div class="card-excerpt">HBM이 D램 생산 용량을 빠르게 흡수. 삼성·SK하이닉스 HBM4 양산 본격화로 TC본더·프로버 등 검사 장비 수요 급증.</div>
+  </a>
+
+  <a href="https://www.thelec.kr/news/articleView.html?idxno=39903" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bThelec">디일렉</span><span class="card-title">켐트로닉스, 유리기판 TGV 파일럿 라인 구축…LPKF 레이저 장비 도입</span></div>
+    <div class="card-excerpt">켐트로닉스가 독일 LPKF 레이저 가공 장비 등 TGV 파일럿 라인 설비 발주. 연말 고객사 시제품 공급 후 2026~2027년 양산 논의 착수 계획.</div>
+  </a>
+
+  <a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202511060936444000103356" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">더벨</span><span class="card-title">삼성전기, 유리기판 수직계열화 완성…빅테크 협상 '호조'</span></div>
+    <div class="card-excerpt">삼성전기 세종사업장 유리기판 마더팹 구축, 2027년 양산 목표. FCBGA→TGV 유리기판 수직계열화로 빅테크 공급 협상에서 강점 발휘.</div>
+  </a>
+
+  <a href="http://www.finomy.com/news/articleView.html?idxno=251718" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">파이노미</span><span class="card-title">HBM 관련주 희비 엇갈려…테크윙 HBM4 프로버 삼성 신규 납품</span></div>
+    <div class="card-excerpt">테크윙이 HBM4 제조용 큐브 프로버로 삼성전자 신규 고객사 확보. SK하이닉스도 평가 마무리 단계. HBM 검사 장비 시장 본격 확대 신호.</div>
+  </a>
+
+  <a href="https://v.daum.net/v/20260504070315868" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">다음뉴스</span><span class="card-title">AI발 ESS 수요 확대…LG에너지솔루션 등 K-배터리 다시 뛴다</span></div>
+    <div class="card-excerpt">AI 데이터센터 전력 수요 급증으로 ESS 시장 확대. LG에너지솔루션 등 국내 배터리 기업이 중국산 대체 수요로 수혜 전망.</div>
+  </a>
+</section>
+
+<div class="divider"></div>
+
+<!-- ⑥ IPO -->
+<section class="section" id="ipo">
+  <div class="section-header"><span class="section-icon">📈</span><span class="section-title">IPO</span></div>
+  <div class="section-keywords">
+    <span class="kw">#코스닥IPO</span><span class="kw">#기술특례상장</span><span class="kw">#Pre-IPO</span><span class="kw">#기업공개</span><span class="kw">#딥테크상장</span>
+  </div>
+
+  <a href="https://economychosun.com/site/data/html_dir/2026/02/13/2026021300048.html" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">이코노미조선</span><span class="card-title">"IPO 시장 5년 주기로 활황, 2026년 86개사 상장 예정"</span></div>
+    <div class="card-excerpt">코스피 12개·코스닥 74개사 등 86개사 2026년 상장 전망. 5년 주기 IPO 활황 구간 진입, 딥테크·AI 기업 상장 러시 기대.</div>
+  </a>
+
+  <a href="https://www.kmjournal.net/news/articleView.html?idxno=6995" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">KM저널</span><span class="card-title">"이 정도 몸값은 처음"…2026년 빅테크 IPO, 시장 판을 흔든다</span></div>
+    <div class="card-excerpt">오픈AI·스페이스X·앤스로픽 등 빅테크 IPO 러시로 글로벌 자본시장이 기술 기업 중심으로 재편. 국내 기술 기업 밸류에이션 벤치마크 상승 효과.</div>
+  </a>
+
+  <a href="https://zetaplan.com/special-listings/" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">제타플랜</span><span class="card-title">기술특례상장 제도 해설 — 재무요건 미충족 혁신기업의 코스닥 상장 경로</span></div>
+    <div class="card-excerpt">기술특례상장은 2005년 도입, 기술력 우수하나 재무요건 미달 기업의 코스닥 진입 경로. BTL과 같은 딥테크 연구소 기업의 주요 상장 루트.</div>
+  </a>
+
+  <div class="no-news">📭 오늘(2026.06.10) 추가 IPO 기사를 찾지 못했습니다.</div>
+  <div class="no-news">📭 오늘(2026.06.10) 추가 IPO 기사를 찾지 못했습니다.</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ⑦ 벤처/테크 -->
+<section class="section" id="venture">
+  <div class="section-header"><span class="section-icon">🚀</span><span class="section-title">벤처/테크</span></div>
+  <div class="section-keywords">
+    <span class="kw">#딥테크</span><span class="kw">#VC투자</span><span class="kw">#AI스타트업</span><span class="kw">#소부장</span><span class="kw">#반도체스타트업</span>
+  </div>
+
+  <a href="https://startuprecipe.co.kr/archives/5820054" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bSR">스타트업레시피</span><span class="card-title">[이번주투자] 배터리·우주…딥테크 강세 속 2,216억원 끌어왔다</span></div>
+    <div class="card-excerpt">금주 32개 스타트업 2,216억원 투자 유치. 2차전지 소재 천보비엘에스 800억 시리즈A 최대 규모. AI·딥테크 분야가 흐름 주도.</div>
+  </a>
+
+  <a href="https://biz.heraldcorp.com/article/10763557" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bHerald">헤럴드경제</span><span class="card-title">"죽음의 계곡 넘는다" 딥테크 스타트업 사업화 지원…최대 10억 투자</span></div>
+    <div class="card-excerpt">과기부·연구개발특구진흥재단, '딥테크 스타트업 챌린지' 추진. 결선 기업 최대 10억 직접 투자+전략기술연구성과사업화 과제 연계 지원.</div>
+  </a>
+
+  <a href="https://m.sedaily.com/amparticle/20050979" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bSedaily">서울경제</span><span class="card-title">스타트업 투자 3개월 연속 1조 돌파…돈은 AI·딥테크로 몰렸다</span></div>
+    <div class="card-excerpt">국내 스타트업 투자 3개월 연속 월 1조원 돌파. AI·딥테크·반도체·배터리·우주 분야 기업에 자금 집중.</div>
+  </a>
+
+  <a href="https://www.startupn.kr/news/articleView.html?idxno=56435" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bStartupN">스타트업엔</span><span class="card-title">"성장기·딥테크 아니면 문턱 높다"…2026년 스타트업 지원사업 생존 전략</span></div>
+    <div class="card-excerpt">2026년 정부 스타트업 지원사업이 성장기·딥테크 특화형으로 재편. 기술 기반 성장 기업 우대 경향 강화로 전략적 대응 필요.</div>
+  </a>
+
+  <a href="https://www.koreabizreview.com/detail.php?number=7361&thread=21r04" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">코리아비즈리뷰</span><span class="card-title">2026년 스타트업 생태계 대전환, '딥테크'와 '글로벌'이 승부처다</span></div>
+    <div class="card-excerpt">2026년 스타트업 키워드는 딥테크와 글로벌. 제조·반도체·에너지 분야 기술 스타트업이 VC 투자 핵심 타깃으로 부상.</div>
+  </a>
+</section>
+
+<div class="divider"></div>
+
+<!-- ⑧ 경제이슈 -->
+<section class="section" id="economy">
+  <div class="section-header"><span class="section-icon">💹</span><span class="section-title">경제이슈</span></div>
+  <div class="section-keywords">
+    <span class="kw">#원달러환율</span><span class="kw">#기준금리</span><span class="kw">#코스피코스닥</span><span class="kw">#물가</span><span class="kw">#외환보유액</span>
+  </div>
+
+  <a href="https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do?no=101596&siteId=6" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">무역협회</span><span class="card-title">[하반기 환율 전망] 중동전에 '고환율 뉴노멀' 여부 달렸다</span></div>
+    <div class="card-excerpt">원달러 환율 1,494원 수준 지속. 6월 초 장중 1,562원 급등. 중동 정세·미연준 금리 방향이 하반기 환율 핵심 변수로 작용.</div>
+  </a>
+
+  <a href="https://kr.investing.com/analysis/article-200457630" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">인베스팅닷컴</span><span class="card-title">6월 첫 주, AI·반도체로의 극단적 쏠림이 만든 대혼란 장세</span></div>
+    <div class="card-excerpt">AI·반도체주로 자금 극단적 쏠림이 코스피·코스닥 변동성 확대. 외국인 수급 불안정과 고환율 복합 작용으로 혼란 지속.</div>
+  </a>
+
+  <a href="https://kbthink.com/investment/fx/daily/260513.html" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">KB의생각</span><span class="card-title">수심 가득한 원화, 수급·심리가 키운 오버슈팅</span></div>
+    <div class="card-excerpt">원화 약세 오버슈팅 국면 지속. 한국은행 기준금리 2.50% 동결 유지. 5월 소비자물가 3.1% 상승(전년동월비)으로 물가 압력 재확대.</div>
+  </a>
+
+  <a href="https://www.tossbank.com/articles/baserate2601" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">토스뱅크</span><span class="card-title">한국은행 기준금리 동결…2026년 금리 발표 일정 및 전망</span></div>
+    <div class="card-excerpt">한국은행 금융통화위원회 기준금리 2.50% 동결. 고환율·고물가 속 인하 여력 제한. 2026년 하반기 인하 가능성 시장 주목.</div>
+  </a>
+
+  <div class="no-news">📭 오늘(2026.06.10) 추가 경제이슈 기사를 찾지 못했습니다.</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ⑨ 시사이슈 -->
+<section class="section" id="society">
+  <div class="section-header"><span class="section-icon">🗞</span><span class="section-title">시사이슈</span></div>
+  <div class="section-keywords">
+    <span class="kw">#외교정책</span><span class="kw">#산업정책</span><span class="kw">#국방R&D</span><span class="kw">#미중기술패권</span><span class="kw">#공급망재편</span>
+  </div>
+
+  <a href="https://news.nate.com/view/20260105n22044" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">네이트뉴스</span><span class="card-title">2026년 우리 앞에 놓인 외교안보 과제들</span></div>
+    <div class="card-excerpt">미중 기술 패권 경쟁, 반도체 수출 통제, 한미·한중·한일 3각 외교 관리가 2026년 최대 외교안보 도전. BTL 수출 영업 환경에 직접 영향.</div>
+  </a>
+
+  <a href="https://sejong.org/web/boad/1/egoread.php?bd=1&seq=12593" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">세종연구소</span><span class="card-title">2026년 한중정상회담과 이재명 정부의 전략적 선택</span></div>
+    <div class="card-excerpt">이재명 정부 실용 외교로 한중 관계 개선 추구. 반도체 공급망 재편에서 한국의 입지 확보가 핵심 과제. 소부장 협력 기회 확대 가능성.</div>
+  </a>
+
+  <a href="https://www.korea.kr/govVision/" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">정책브리핑</span><span class="card-title">이재명 정부 123대 국정과제 — 딥테크·연구소기업 지원 정책 포함</span></div>
+    <div class="card-excerpt">이재명 정부 국정과제에 딥테크 스타트업 육성·연구소기업 지원 포함. 국가 R&D 예산 확대 및 기술사업화 지원 정책 구체화 추진 중.</div>
+  </a>
+
+  <div class="no-news">📭 오늘(2026.06.10) 추가 시사이슈 기사를 찾지 못했습니다.</div>
+  <div class="no-news">📭 오늘(2026.06.10) 추가 시사이슈 기사를 찾지 못했습니다.</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ⑩ 사회이슈 -->
+<section class="section" id="society2">
+  <div class="section-header"><span class="section-icon">🏙️</span><span class="section-title">사회이슈</span></div>
+  <div class="section-keywords">
+    <span class="kw">#이공계인력</span><span class="kw">#ESG</span><span class="kw">#대전충청</span><span class="kw">#대덕연구단지</span><span class="kw">#탄소중립</span>
+  </div>
+
+  <a href="https://www.kongju.ac.kr/bbs/BK21/896/418459/artclView.do" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">과기정통부</span><span class="card-title">과기정통부, 2026년 이공계 연구생활장려금 지원 사업 추진</span></div>
+    <div class="card-excerpt">이공계 전일제 대학원생 대상 연구생활장려금 지원. 연구직 처우 개선으로 이공계 인재 유출 방지 및 연구 인력 수급 안정화 목표.</div>
+  </a>
+
+  <a href="https://www.daejeon.go.kr/" target="_blank" rel="noopener" class="card">
+    <div class="card-top"><span class="badge bKorea">대전광역시</span><span class="card-title">대전광역시, 2026년 공공기관 통합채용 추진…벤처·연구 인력 생태계 강화</span></div>
+    <div class="card-excerpt">대전광역시 2026년 상반기 공공기관 직원 통합채용 진행. 대덕연구단지 중심 벤처·연구 인력 생태계 강화 정책 연계 추진.</div>
+  </a>
+
+  <div class="no-news">📭 오늘(2026.06.10) 추가 사회이슈 기사를 찾지 못했습니다.</div>
+  <div class="no-news">📭 오늘(2026.06.10) 추가 사회이슈 기사를 찾지 못했습니다.</div>
+  <div class="no-news">📭 오늘(2026.06.10) 추가 사회이슈 기사를 찾지 못했습니다.</div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p><strong style="color:#fff;">Blue Tile Lab® Daily Newsletter</strong> · 전략기획실 BTL Intelligence</p>
+  <p style="margin-top:6px;">2026.06.10 수요일 | <a href="mailto:strategy@bluetilelab.com">strategy@bluetilelab.com</a></p>
+  <p style="margin-top:10px;font-size:11px;opacity:.5;">본 뉴스레터는 공개된 언론 기사를 수집·요약한 것으로, 블루타일랩의 공식 입장과 다를 수 있습니다.</p>
+</footer>
+
+<script>
+(function(){
+  var tabs = document.querySelectorAll('.tab-link');
+  var sections = document.querySelectorAll('.section');
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(e){
+      e.preventDefault();
+      var el = document.querySelector(this.getAttribute('href'));
+      if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - 100, behavior:'smooth'}); }
+    });
+  });
+  function highlight(){
+    var pos = window.scrollY + 120;
+    sections.forEach(function(s, i){
+      if(s.offsetTop <= pos){
+        tabs.forEach(function(t){ t.classList.remove('active'); });
+        if(tabs[i]) tabs[i].classList.add('active');
+      }
+    });
+  }
+  window.addEventListener('scroll', highlight);
+  highlight();
+})();
+</script>
+</body>
+</html>
